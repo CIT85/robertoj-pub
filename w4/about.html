@@ -50,6 +50,46 @@
                 efficient, as I have everything in one website without needing to have multiple tabs open. Plus it
                 replies to me and studys the information being feed.</p>
         </section>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>Please Contact me if there is an issue on the website.</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="James" required autofocus>
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Bond" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890"
+                        pattern="[0-9]-{3}[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                </p>
+                <p>
+                    <label for="message">Your Message:</label><br>
+                    <textarea name="message" id="message" cols="50" rows="4" placeholder="Type your message here..."
+                        required></textarea>
+                </p>
+            </form>
+        </article>
+
+        <section id="httpbin-output">
+            <h2>Understanding HTTPBin Output</h2>
+            <p>HTTPBin is a useful tool for testing HTTP requests and inspecting the data that the server receives.</p>
+            <p>When you submit the form, HTTPBin will capture the form data and display it in a structured format,
+                showing the parameters, headers, and other relevant information.</p>
+            <p>For example, if you submit the form with the above inputs, you'll see the first name, last name, email,
+                phone number, and message in the output along with other details like headers and origin.</p>
+        </section>
+
     </main>
 
     <footer>
