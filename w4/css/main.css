@@ -1,0 +1,138 @@
+/* Global Styles */
+html {
+    font-size: 22px;
+    /* Set base font size for the entire document */
+}
+
+body {
+    background-color: #ede1d2;
+    /* Set background color for the body */
+    color: black;
+    /* Set text color */
+    font-family: cursive;
+    /* Set font family for the entire document */
+}
+
+/* Header Styles */
+header {
+    background-color: #cbb89d;
+    /* Set background color for the header */
+    padding: 20px;
+    /* Add padding around content in the header */
+    text-align: center;
+    /* Center-align the content in the header */
+    margin: 10px;
+    /* Add margin around the header */
+    border: 1px solid #333;
+    /* Add border around the header */
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #cbb89d;
+    /* Set background color for the header */
+    padding: 0px;
+    /* Add padding around content in the header */
+    text-align: center;
+    /* Center-align the content in the header */
+    border-radius: 20px;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #cbb89d;
+    /* Set background color for the navigation */
+    padding: 10px;
+    /* Add padding around navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove default list styles */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+nav li {
+    display: inline;
+    /* Display navigation items horizontally */
+    margin-right: 20px;
+    /* Add spacing between navigation items */
+}
+
+nav a {
+    color: black;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-weight: bold;
+    /* Set font weight for links */
+}
+
+nav a:hover {
+    color: #ddd;
+    /* Change link color on hover */
+}
+
+/* Link Styles */
+a {
+    color: black;
+    /* Set default link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+a:hover,
+a:active {
+    color: #bbaa95;
+    /* Change link color on hover and active */
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    /* Collapse table borders */
+    background-color: #e3d8c9;
+    /* Set background color for tables */
+}
+
+th {
+    background-color: #bbaa95;
+    /* Set background color for table headers */
+    border: 1px solid #333;
+    /* Set border for table headers */
+    padding: 8px;
+    /* Add padding for table headers */
+    text-transform: uppercase;
+    /* Transform text to uppercase */
+}
+
+td {
+    border: 1px solid #333;
+    /* Set border for table cells */
+    padding: 8px;
+    /* Add padding for table cells */
+    text-align: center;
+    /* Center-align text in table cells */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c9bfae;
+    /* Set background color for even table rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b6a994;
+    /* Set background color for odd table rows */
+}
+
+#box-model a {
+    color: blue;
+}
+
+footer a span {
+    color: blue;
+}
