@@ -1,0 +1,752 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* Global styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Set default font family */
+    /* Also note i don't know what this font means but i really like it and i randomly found it  */
+    line-height: 1.6;
+    /* Set default line height */
+    background-color: #FEFAE0;
+    /* Color for background */
+    color: #283618;
+    /* Color for text */
+    font-size: 16px;
+    /* Base font size */
+}
+
+/* Grid layout / flexbox */
+.container {
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Create three columns of equal width */
+    gap: 1rem;
+    /* Add a gap of 1rem between grid items */
+}
+
+section {
+    padding: 20px;
+    /* Add 20px padding inside each section */
+    border-radius: 7px;
+    /* Round the corners of each section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect to each section */
+}
+
+.color-palette {
+    grid-column: 1 / 3;
+    /* Color palette span from the first to the second column */
+}
+
+.header {
+    padding: 20px;
+    /* Add padding around the content */
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space the items evenly along the main axis (horizontally) */
+    align-items: center;
+    /* Center the items along the cross axis (vertically) */
+}
+
+.footer {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: center;
+    /* Center the content horizontally */
+}
+
+/* Header styles */
+header {
+    background-color: #606c38;
+    /* Color for header background */
+    color: whitesmoke;
+    /* Color for header text */
+    padding: 20px;
+    /* Add padding to the header */
+    text-align: center;
+    /* Center align header content */
+    font-size: 22px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    /* Remove default list style */
+}
+
+nav ul li {
+    display: inline;
+    /* Display navigation items inline */
+    margin-right: 20px;
+    /* Add right margin to navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Remove margin from last navigation item */
+}
+
+nav a {
+    color: #FEFAE0;
+    /* Color for navigation links */
+    text-decoration: none;
+    /* Remove underline from navigation links */
+    font-size: 22px;
+    /* Adjust font size for navigation links */
+}
+
+nav h2 {
+    display: none;
+}
+
+nav a:hover {
+    color: #DDA15E;
+    /* Change color on hover */
+}
+
+/* Main content styles */
+main {
+    margin: 20px;
+    /* Add margin around the main content */
+}
+
+h2 {
+    color: #BC6C25;
+    /* Color for h2 title */
+    font-size: 26px;
+    /* Adjust font size for h2 titles */
+    margin-bottom: 20px;
+    /* Add bottom margin to the section title */
+}
+
+h3 {
+    color: #606C38;
+    /* Color for h3 title */
+    font-size: 22px;
+    /* Adjust font size for h3 titles */
+}
+
+section {
+    margin-bottom: 40px;
+    /* Add bottom margin to sections */
+}
+
+/* Header styles for section headings */
+header h2 {
+    margin-bottom: 20px;
+    /* Add bottom margin to section headings */
+}
+
+/* Header styles for article headings */
+article h3 {
+    margin-bottom: 10px;
+    /* Add bottom margin to article headings */
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 20px;
+    /* Add bottom margin to paragraphs */
+    font-size: 16px;
+    /* Adjust font size for paragraphs */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    /* Set table width to 100% */
+    margin-bottom: 30px;
+    /* Add bottom margin to tables */
+    border-collapse: collapse;
+    /* Collapse table borders */
+}
+
+table,
+th,
+td {
+    border: 1px solid #283618;
+    /* Color for table borders */
+}
+
+th,
+td {
+    padding: 10px;
+    /* Add padding to table cells */
+    text-align: left;
+    /* Left align text in table cells */
+    font-size: 16px;
+    /* Adjust font size for table cells */
+}
+
+th {
+    background-color: #BC6C25;
+    /* Background color for table header */
+    color: #FEFAE0;
+    /* Color for table header text */
+    text-align: center;
+    /* Center align figures */
+    font-size: 19px;
+    /* Adjust font size for table header */
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: #FEFAE0;
+    /* Lighter color for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #DDA15E;
+    /* Darker color for odd rows */
+}
+
+/* Figure styles */
+figure {
+    margin-bottom: 20px;
+    /* Add bottom margin to figures */
+    text-align: center;
+    /* Center align figures */
+}
+
+/* Footer styles */
+footer {
+    background-color: #606C38;
+    /* Color for footer background */
+    color: whitesmoke;
+    /* Color for footer text */
+    text-align: center;
+    /* Center align footer content */
+    padding: 10px;
+    /* Add padding to the footer */
+    bottom: 0;
+    /* Align footer at the bottom */
+    width: 100%;
+    /* Set footer width to 100% */
+}
+
+.footer p {
+    font-size: 20px;
+    /* Set font size to 20 pixels */
+    margin: 0 10px;
+    /* Add margin to create spacing around the paragraph */
+    letter-spacing: 0px;
+    /* Adjust letter-spacing to 0 pixels */
+    padding: 0 5px;
+    /* Add padding to create spacing between the text and the edge of the paragraph */
+}
+
+footer a {
+    color: #FEFAE0;
+    /* Color for footer links */
+    text-decoration: none;
+    /* Remove underline from footer links */
+}
+
+footer a:hover {
+    color: #DDA15E;
+    ;
+    /* Add color on hover for footer links */
+}
+
+/* Styles for the Genres section */
+#genres p {
+    margin-bottom: 20px;
+    /* Add bottom margin to paragraphs */
+}
+
+#genres details {
+    margin-bottom: 20px;
+    /* Add bottom margin to the details element */
+}
+
+#genres summary {
+    cursor: pointer;
+    /* Change cursor to pointer for the summary element */
+}
+
+#genres ul {
+    list-style-type: none;
+    /* Remove default list style */
+}
+
+#genres ul li {
+    margin-bottom: 10px;
+    /* Add bottom margin to list items */
+}
+
+#genres ul li:hover {
+    border: 1px solid #BC6C25;
+    /* Border color and style */
+    border-radius: 7px;
+    /* Add rounded corners to the border */
+    padding: 1px;
+    /* Adjust the padding to accommodate the border */
+}
+
+/* Styles for the Color Palette section */
+#color-palette,
+#site-map {
+    text-align: center;
+    /* Center-align text */
+}
+
+.color-container {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center-align items */
+    /* Align items horizontally centered */
+}
+
+.color-box {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    /* Make color box relative for absolute positioning of text */
+    list-style-type: none;
+    /* Remove bullet points from list items */
+    border: 2px solid black;
+    /* Add a black border */
+}
+
+.color-name,
+.color-code {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #fff;
+    /* Color for text */
+}
+
+.color-code {
+    bottom: auto;
+    top: 5px;
+}
+
+.color-box:nth-child(1) {
+    background-color: #606C38;
+    /* Color 1 */
+}
+
+.color-box:nth-child(2) {
+    background-color: #283618;
+    /* Color 2 */
+}
+
+.color-box:nth-child(3) {
+    background-color: #FEFAE0;
+    /* Color 3 */
+}
+
+.color-box:nth-child(3) .color-box,
+.color-box:nth-child(3) .color-code,
+.color-box:nth-child(3) .color-name {
+    color: #000;
+    /* Change text color for Color 3 */
+}
+
+.color-box:nth-child(4) {
+    background-color: #DDA15E;
+    /* Color 4 */
+}
+
+.color-box:nth-child(5) {
+    background-color: #BC6C25;
+    /* Color 5 */
+}
+
+/* Color box hover effect */
+.color-box:hover {
+    border-color: #DDA15E;
+    /* Change border color on hover */
+}
+
+#site-map {
+    display: flex;
+    flex-direction: column;
+}
+
+/* || EXTRA SMALL */
+@media screen and (max-width: 575.98px) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+/* || XL */
+@media screen and (min-width: 1200px) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
+
+/* || 2XL */
+@media screen and (min-width: 1400px) {
+
+    /* Adjust grid layout */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Adjust font sizes */
+    body {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header and footer border */
+    header,
+    footer {
+        border-radius: 0;
+    }
+}
