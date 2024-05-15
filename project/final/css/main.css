@@ -36,6 +36,20 @@ body {
     /* Add a gap of 1rem between grid items */
 }
 
+#home {
+    background-image: url('../imgs/arcade.jpg');
+    background-size: cover;
+    /* Ensure the background image covers the entire container */
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Center the image */
+}
+
 /* Section styles */
 section {
     padding: 20px;
@@ -552,6 +566,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -602,6 +618,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -655,6 +673,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -708,6 +728,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -761,6 +783,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -815,6 +839,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
@@ -868,6 +894,8 @@ button[type="reset"]:focus {
     img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* Adjust header and footer border */
