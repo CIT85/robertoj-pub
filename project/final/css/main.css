@@ -36,6 +36,15 @@ body {
     /* Add a gap of 1rem between grid items */
 }
 
+.container-contact {
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Create three columns of equal width */
+    gap: 1rem;
+    /* Add a gap of 1rem between grid items */
+}
+
 section {
     padding: 20px;
     /* Add 20px padding inside each section */
