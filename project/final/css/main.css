@@ -36,15 +36,7 @@ body {
     /* Add a gap of 1rem between grid items */
 }
 
-.container-contact {
-    display: grid;
-    /* Use grid layout */
-    grid-template-columns: 1fr 1fr;
-    /* Create three columns of equal width */
-    gap: 1rem;
-    /* Add a gap of 1rem between grid items */
-}
-
+/* Section styles */
 section {
     padding: 20px;
     /* Add 20px padding inside each section */
@@ -59,6 +51,7 @@ section {
     /* Color palette span from the first to the second column */
 }
 
+/* Header styles */
 .header {
     padding: 20px;
     /* Add padding around the content */
@@ -70,14 +63,6 @@ section {
     /* Center the items along the cross axis (vertically) */
 }
 
-.footer {
-    display: flex;
-    /* Use flexbox layout */
-    justify-content: center;
-    /* Center the content horizontally */
-}
-
-/* Header styles */
 header {
     background-color: #606c38;
     /* Color for header background */
@@ -88,6 +73,13 @@ header {
     text-align: center;
     /* Center align header content */
     font-size: 22px;
+}
+
+.footer {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: center;
+    /* Center the content horizontally */
 }
 
 /* Navigation styles */
@@ -305,6 +297,111 @@ footer a:hover {
     /* Adjust the padding to accommodate the border */
 }
 
+/* Contact Section */
+#contact {
+    margin: 20px auto;
+    /* Center the form horizontally */
+    max-width: 600px;
+    /* Limit the width of the form */
+    padding: 20px;
+    /* Add padding around the form */
+    background-color: #f9f9f9;
+    /* Set background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Center align headings */
+h2,
+h3 {
+    text-align: center;
+}
+
+/* Styling for the form */
+form {
+    margin-top: 20px;
+    /* Add space above the form */
+}
+
+/* Remove default styling for fieldset */
+fieldset {
+    border: none;
+    /* Remove border */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+}
+
+/* Styling for legend */
+legend {
+    color: #BC6C25;
+    /* Set text color */
+    font-size: 30px;
+    /* Set font size */
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    /* Display labels as block elements */
+    margin-bottom: 5px;
+    /* Add space below labels */
+}
+
+/* Styling for text inputs, email inputs, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    /* Make inputs and textarea full width */
+    padding: 10px;
+    /* Add padding */
+    margin-bottom: 10px;
+    /* Add space below inputs */
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+
+/* Styling for submit and reset buttons */
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    /* Add padding */
+    margin-top: 10px;
+    /* Add space above buttons */
+    background-color: #007bff;
+    /* Set background color */
+    color: #fff;
+    /* Set text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+/* Hover and focus styles for buttons */
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #0056b3;
+    /* Change background color on hover */
+}
+
+button[type="submit"]:focus,
+button[type="reset"]:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
 /* Styles for the Color Palette section */
 #color-palette {
     text-align: center;
@@ -385,6 +482,7 @@ footer a:hover {
     /* Change border color on hover */
 }
 
+/* Site Map styles */
 #site-map {
     display: inline-block;
     text-align: center;
